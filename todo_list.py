@@ -54,25 +54,27 @@ def remove_item(item):
 
     print(f"'{item}' is not in the to-do list.")
 
-# Main program loop
-while True:
-    print("1. Display to-do list")
-    print("2. Add an item")
-    print("3. Remove an item")
-    print("4. Clear the list")
-    print("5. Quit")
-    choice = input("Enter your choice (1-5): ")
 
-    if choice == "1":
-        display_list()
-    elif choice == "2":
-        item = input("Enter the item to add: ")
-        add_item(item)
-    elif choice == "3":
-        item = input("Enter the item to remove: ")
-        remove_item(item)
-    elif choice == "4":
-        todo_list.clear()
-        print("Your to-do list has been cleared.")
-    elif choice == "5":
-        print
+# Main program loop
+def main():
+    while True:
+        print("1. Display to-do list")
+        print("2. Add an item")
+        print("3. Remove an item")
+        print("4. Clear the list")
+        print("5. Quit")
+        choice = input("Enter your choice (1-5): ")
+
+        if choice == "1":
+            display_list()
+        elif choice == "2":
+            item = input("Enter the item to add: ")
+            add_item(item)
+        elif choice == "3":
+            item = input("Enter the item to remove: ")
+            remove_item(item)
+        elif choice == "4":
+            todo_list.clear()
+            print("Your to-do list has been cleared.")
+        elif choice == "5":
+            print

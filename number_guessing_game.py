@@ -43,4 +43,3 @@ def play_game():
 
     print("Thank you for playing the Number Guessing Game. Goodbye! :)")
 
-play_game()

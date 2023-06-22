@@ -1,12 +1,12 @@
 # install and import Flask framework
-pip install flask
-from Flask import flask
+#pip install flask
+from flask import Flask
 
 app = Flask(__name__)
 # define flask route
 @app.route('/')
 def home():
-  reurn "Welcome to the URL shortener!"
+  return "Welcome to the URL shortener!"
 # implement shortening logic
 @app.route('/shorten/<path:url>')
 def shorten(url):
